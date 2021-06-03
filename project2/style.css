@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  div {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  img {
+    height: 125px;
+    width: 125px;
+    border: 1px solid black;
+  }
+  
+  .thumbnail {
+    height: 100px;
+  }
+  
+  .item-container {
+    width: 420px;
+    height: 320px;
+    display:inline-block;
+  }
+  
+  .img-container {
+    width: 150px;
+    height: 200px;
+    display:inline;
+    float: left;
+  }
+  
+  .detail-container {
+    width: 250px;
+    height: 200px;
+    display: inline;
+    float: right;
+  }
+  
+  .desc-container {
+    width: 400px;
+    height: 100px;
+    display: block;
+  }
+  

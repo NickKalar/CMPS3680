@@ -1,0 +1,13 @@
+False
+False
+True
+False
+True
+1957
+3 billion
+1912
+C#
+Perl
+Node.js
+jQuery
+AngularJS

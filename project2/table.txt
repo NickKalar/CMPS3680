@@ -1,0 +1,44 @@
+DESCRIBE Users;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| user_id       | int(11)      | NO   | PRI | NULL    | auto_increment |
+| user_fname    | varchar(255) | YES  |     | NULL    |                |
+| user_lname    | varchar(255) | YES  |     | NULL    |                |
+| user_email    | varchar(255) | YES  |     | NULL    |                |
+| user_password | varchar(255) | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+
+SELECT * FROM Users;
++---------+------------+------------+---------------+---------------+
+| user_id | user_fname | user_lname | user_email    | user_password |
++---------+------------+------------+---------------+---------------+
+|       1 | Test       | User       | test@csub.edu | password123   |
++---------+------------+------------+---------------+---------------+
+
+DESCRIBE Products;
++------------------+---------------------+------+-----+---------+----------------+
+| Field            | Type                | Null | Key | Default | Extra          |
++------------------+---------------------+------+-----+---------+----------------+
+| prod_id          | int(10) unsigned    | NO   | PRI | NULL    | auto_increment |
+| prod_name        | varchar(127)        | YES  |     | NULL    |                |
+| prod_img         | varchar(127)        | YES  |     | NULL    |                |
+| prod_description | varchar(511)        | YES  |     | NULL    |                |
+| prod_price       | decimal(10,2)       | YES  |     | NULL    |                |
+| prod_rating      | tinyint(3) unsigned | YES  |     | NULL    |                |
+| prod_sku         | char(32)            | YES  |     | NULL    |                |
+| prod_stock       | int(10) unsigned    | YES  |     | NULL    |                |
++------------------+---------------------+------+-----+---------+----------------+
+
+SELECT * FROM Products;
++---------+-------------------------------+------------+----------------------------------------------------------------+------------+-------------+----------+------------+
+| prod_id | prod_name                     | prod_img   | prod_description                                               | prod_price | prod_rating | prod_sku | prod_stock |
++---------+-------------------------------+------------+----------------------------------------------------------------+------------+-------------+----------+------------+
+|       1 | Intel Core i9-9900K           | i9.jpg     | Coffee Lake 8-Core, 16-thread 3.6 GHz (5.0 GHz turbo) LGA 1151 |     524.99 |           5 | 12345    |         12 |
+|       2 | Intel Core i7-9700K           | i7.jpg     | Coffee Lake 8-Core 3.6 GHz (4.9 GHz Turbo) LGA 1151            |     409.99 |           3 | 12346    |          0 |
+|       3 | Intel Core i5-9600K           | i5.jpg     | Coffee Lake 6-Core 3.7 GHz (4.6 GHz Turbo) LGA 1151            |     264.99 |           4 | 12347    |          7 |
+|       4 | AMD RYZEN 7 2700X             | ryzen7.jpg | 8-Core 3.7 GHz (4.3 GHz Max Boost) Socket AM4                  |     294.99 |           2 | 12348    |          2 |
+|       5 | AMD CPU FX-8350 Black Edition | fx8350.jpg | 4.0 GHz (4.2 GHz Turbo) Socket AM3+                            |      89.99 |           3 | 12349    |          0 |
+|       6 | AMD A8-9600                   | a8.jpg     | Bristol Ridge Quad-Core 3.1 GHz Socket AM4                     |      67.99 |           1 | 12350    |          1 |
++---------+-------------------------------+------------+----------------------------------------------------------------+------------+-------------+----------+------------+
+

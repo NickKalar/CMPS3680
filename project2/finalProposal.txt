@@ -1,0 +1,60 @@
+What is the name of your website?
+TechTexts
+
+What is your website about?
+A series of tests designed to test the user's knowledge of technology and programming
+
+What is the purpose of the website?
+To make people feel bad about how much they don't know
+
+What information will you have on your homepage?
+A basic breakdown of the site. navbar and Login at the top. Once the user logs in, there will be a selection of tests to take, as well as a "score" page for the user to navigate to.
+
+What front end features will you have within your website?
+Login/out, user registration, the ability to take tests and to view scores, customized css. 
+
+What back end features will you have within your website?
+connectivity to mysql database with multiple tables for the tests, users, and scores. php scripts for posting and getting
+
+What do you want visitors to do once they're at your site?
+preview the site's features and create an account
+
+What types of actions do you want your visitors to take within your website?
+register for an account
+
+What types of actions do you want your users to take within your website?
+Login/Logout, take test, review scores (though they won't be given correct answers). Potentially users could create tests in the future
+
+How many pages of content will need to be developed and what is the purpose for those pages?
+Home - main splash page to great the user/visitor
+Login - page to log into an account
+Register/New User - register for an account
+Logout - end session and delete cookies
+Test Selection - select from a list of tests
+Test - take the selected test
+Results - view results from taken tests
+
+How many tables will your database contain and what is the intended purpose for the table?
+3+
+I will have a user table to store user variables, a results table to store results of tests and at least 1 table for the tests. Depending on the complexity, I may have one table per test
+
+What is the layout / theme of your website?
+Minimalist website. I don't like to distract. This is a place to learn.
+
+What style of page navigation will your website have?
+A simple navbar at the top of the page. Probably bootstrap
+
+Are there websites that already exist which are closely related to yours? What are they?
+I'm sure there are dozens of testing website out there.
+
+What types of things do you see on other websites that you would like to incorporate within your website? Will you?
+Most have premium accounts. Don't think I'll be able to do that, but I'd enjoy it.
+
+What makes your website similar to others?
+The ability to log on, logout, register, and take tests
+
+What makes your website different from others?
+The quality of the tests, the subject matter.
+
+What more can you state about your website?
+Oh, it's gonna be gud.

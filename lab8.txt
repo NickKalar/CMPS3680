@@ -1,0 +1,10 @@
+1) 0
+2) unable to access the page
+3) 1
+4) isActive 1
+userInfo This+cookie+could+store+sensitive+data
+5) It lets me through like I entered the password
+6) my comment showed up with the tags visible
+the script was posted
+7) cookies can be checked by malicious sites/code. having sensitive data in them leaves the vulnerable to attack
+8) Never trust the User, and always sanitize the data

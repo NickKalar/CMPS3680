@@ -1,0 +1,49 @@
+*{box-sizing:border-box;}
+body{
+    margin:0px auto;
+    padding:10px;
+    background-color:#ccddff;
+}
+nav {
+    margin:5px 0px;
+    padding:10px;
+    background-color:#ffffcc;
+    border:solid 1px #cccc00;
+}
+nav a {
+    display:inline;
+    border:solid blue 2px;
+    padding:2px 5px;
+    margin-top:15px;
+}
+a:link{color:blue;}
+a:visited{color:blue;}
+a:hover{color:gray;}
+a:active{color:black;}
+.active {
+    border-color:red;
+    background-color:#cccccc;
+}
+header {
+    text-align:center;
+    text-decoration: underline;
+    border:solid black 2px;
+    background-color:#ffffcc;
+}
+footer {
+    text-align:center;
+    border:solid gray 2px;
+    background-color:#ffffcc;
+}
+div.service{
+    display:inline-block;
+    border:solid 2px black;
+    margin:0px auto;
+}
+div.service img{
+    width: 100%;
+    height:auto;
+}
+section#services{
+    text-align:center;
+}

@@ -1,0 +1,111 @@
+What is a RDBMS?
+A Relational database management system (RDBMS) is a database management system (DBMS) that is based on the relational mode
+
+What is a Database Schema?
+visualisation of database, rule set for database 
+
+What is an ER model?
+Entity/Relationshop. Graphical database design
+
+What is a one to one relationship?
+one entry in a table is linked to only one entry in another table
+
+What is a one to many relationship?
+one entry in a table in linked to many entryies in another table
+
+What is a many to many relationship?
+multiple linkage all around. seems messy
+
+What is a tuple?
+a finite ordered list of elements. a single row in a table
+
+What is the use for a primary key?
+to uniquely identify each row of a table
+
+Why should a primary key be unique?
+so you can tell specifically which line is being referenced
+
+What is SQL?
+SQL is a standard language for storing, manipulating and retrieving data in databases
+
+Write the SQL command that would create a table called 'Customers' that has attributes for 'c_id', 'c_firstName', 'c_lastName','c_address', 'c_city', 'c_state', 'c_zip', and 'c_email'. List the 'c_id' as an integer non null auto incrementing primary key attribute.
+
+CREATE TABLE Customers (
+'c_id' int NOT NULL AUTO_INCREMENT, 
+'c_firstName', 
+'c_address', '
+'c_city',
+'c_state',
+'c_zip',
+'c_email',
+PRIMARY KEY (c_id)
+);
+
+Write the SQL command that would alter the 'Customers' table by adding a new column for 'c_age' unsigned tiny integer.
+
+ALTER TABLE Customers ADD 'c_age' TINYINT;
+
+Write the SQL command that would create a table called 'Products' that has attributes for 'p_id', 'p_title', 'p_description', 'p_price'. List the 'p_id' as an integer non null auto incrementing primary key attribute. Set the data type of 'p_price' to decimal(13,4).
+
+CREATE TABLE Products (
+'p_id' int NOT NULL AUTO_INCREMENT,
+'p_title',
+'p_description',
+'p_price' decimal(13,4),
+PRIMARY KEY (p_id)
+);
+
+Write the SQL command that would add at least 3 records to the 'Customers' table.
+
+INTERT INTO Customers ('c_firstName', 'c_address', 'c_city', 'c_state', 'c_zip', 'c_email')
+VALUES ('first', '123 fake st', 'Bakersfield', 'Ca', '93312', 'blah@blah.com'),
+('second', '124 fake st', 'Bakersfield', 'Ca', '93312', 'blah_1@blah.com'),
+('third', '125 fake st', 'Bakersfield', 'Ca', '93312', 'xXxblah360noscopexXx@blah.com');
+
+Write the SQL command that would add at least 3 records to the 'Products' table.
+
+INSERT INTO Products ('p_title', 'p_description', 'p_price')
+VALUES ('book', 'Nothing like a good read', '14.99'),
+('dvd', 'Why read when you can watch', '19.99'),
+('audiobook', 'Just listen', '24.99');
+
+Write the SQL command that would create a table called 'Orders' that has attributes for 'o_id', 'o_cid', 'o_amount', 'o_date'. List the 'o_id' as an integer non null auto incrementing primary key attribute. Set the data type of 'o_amount' to decimal(13,4). Set the 'o_date' to an 8 byte data type that holds the format YYYY-MM-DD HH:MM:SS
+
+CREATE TABLE Orders (
+'o_id' int NOT NULL AUTO_INCREMENT,
+'o_cid',
+'o_amount' decimal(13,4),
+'o_date' datetime,
+PRIMARY KEY(o_id)
+);
+
+Using the data you've provided for your Customers and Products table, write the SQL command to add at least 3 records to the 'Orders' table.
+
+INSERT INTO Orders ('o_cid', 'o_amount', 'o_date')
+VALUES ('first', '23.99', '2019-03-27 11:12:00'),
+       ('second', '903.23', '2019-03-25 09:00:00'),
+       ('third', '312.32', '2018-03-20 04:20:00');
+
+Write the SQL command that would select all of your Customers.
+SELECT * FROM Products;
+
+Write the SQL command that would select all of your Products.
+SELECT * FROM Products;
+
+Write the SQL command that would update one of your Products price to 49.99.
+SELCECT first(Products.price) FROM Products WHERE price = 49.99;
+
+Write the SQL command that would select all of your Products that are less than $100.
+SELECT * FROM Products WHERE price < 100;
+
+Write the SQL command that would select all Orders where the order customer id is that of your first Customer.
+SELECT * FROM Orders WHERE customer_id = 1;
+
+Write the SQL command that would select all Orders above $100.
+SELECT * FROM Orders WHERE total > 100;
+
+Write the SQL command that would delete your last Product record.
+DELETE FROM Product ORDER BY prod_id DESC LIMIT 1;
+
+Assume there is a table called DropThisTable_GoneForever, write the SQL command that would drop that table.
+DROP TALBE DropThisTable_GoneForever;
